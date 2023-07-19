@@ -77,55 +77,12 @@
 
 </head>
 
-      <style type="text/css">
-        .spinner img {
-            width: 150px;
-        }
+      <body class="app">
 
-        .spinner {
-            width: 150px;
-            height: 150px;
-            border-radius: 100%;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
-            animation: spin 3s infinite linear;
-        }
-
-        @keyframes spin {
-            from {
-                transform: rotate(0deg);
-            }
-
-            to {
-                transform: rotate(360deg);
-            }
-        }
-
-        #loader-wrapper {
-            height: 100%;
-            width: 100%;
-            background: rgb(76 76 76 / 79%);
-            position: fixed;
-            left: 0;
-            top: 0;
-            z-index: 99999;
-        }
-    </style>
-    <div id="loader-wrapper" style="display: none;">
-        <div class="spinner"><img src="https://mfs.maticforce.space/1.png"></div>
+    <!-- Loader -->
+    <div id="loading">
+        <img src="https://maticforce.space/Home-Dashboard/Content/assets/images/other/loader.svg" class="loader-img" alt="Loader">
     </div>
-    <script src="https://mfs.maticforce.space/Home-Dashboard/Content/assets/js/jquery.min.js"></script>
-    <script>
-  
-    $("#loader-wrapper").show();
-
-
-    </script>
-
     <!-- PAGE -->
     <div class="page">
         <div class="page-main">
