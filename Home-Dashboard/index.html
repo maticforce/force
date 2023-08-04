@@ -247,7 +247,7 @@ function getVariableData() {
 function getReferralCommission() {
     
 
-    var level1 = parseFloat(0.0075); var level2 = parseFloat(0.005); var level3 = parseFloat(0.0025); var level4 = parseFloat(0.000005);
+    var level1 = parseFloat(5); var level2 = parseFloat(1); var level3 = parseFloat(1); var level4 = parseFloat(1); var level5 = parseFloat(1); var level6 = parseFloat(0.20);
 
     var referraltotal = parseFloat(0);
 
@@ -258,20 +258,28 @@ function getReferralCommission() {
                 var level = value.returnValues._level;
 
                 if (level == 1) {
-                    referraltotal = parseFloat(referraltotal) + parseFloat("0.01");
+                    referraltotal = parseFloat(referraltotal) + parseFloat("5");
 
                 }
                 else if (level == 2) {
 
-                    referraltotal = parseFloat(referraltotal) + parseFloat("0.005");
+                    referraltotal = parseFloat(referraltotal) + parseFloat("1");
                 }
                 else if (level == 3) {
-                    referraltotal = parseFloat(referraltotal) + parseFloat("0.0025");
+                    referraltotal = parseFloat(referraltotal) + parseFloat("1");
+
+                }
+                  else if (level == 4) {
+                    referraltotal = parseFloat(referraltotal) + parseFloat("1");
+
+                }
+                    else if (level == 5) {
+                    referraltotal = parseFloat(referraltotal) + parseFloat("1");
 
                 }
                 else {
 
-                    referraltotal = parseFloat(referraltotal) + parseFloat("0.00025");
+                    referraltotal = parseFloat(referraltotal) + parseFloat("0.20");
 
                 }
 
@@ -468,7 +476,7 @@ function InDirectreferralCount(address, level) {
 function Transaction_Register() {
     
     var events = myContractInstance.getPastEvents('getMoneyForLevelEvent', {filter:{ _user: account },  'fromBlock': 0, 'toBlock': 'latest'}, function (error, log) {
-        var level1 = parseFloat(5); var level2 = parseFloat(1); var level3 = parseFloat(1); var level4 = parseFloat(1);
+        var level1 = parseFloat(5); var level2 = parseFloat(1); var level3 = parseFloat(1); var level4 = parseFloat(1); var level5 = parseFloat(1); var level6 = parseFloat(0.20);
 
         if (!error) {
             $.each(log, function (key, value) {
@@ -1279,6 +1287,93 @@ $(document).ready(function () {
                     </div>
                 </div>
             </div>
+        </div>
+        <!-- row closed -->
+              <!-- row opened -->
+        <div class="row">
+            <div class="col-md-12 col-lg-6 col-xl-3">
+                <div class="card overflow-hidden bg-primary">
+                    <div class="card-body bg-gradient-success">
+                        <div class="d-flex">
+                            <div class="">
+                                <p class="mb-2 h6">Referral Earning ETH</p>
+                                <h2 class="mb-1 "><span class="totalreferral">0</span></h2>
+                            </div>
+                            <div class=" my-auto ml-auto">
+                                <div class="chart-wrapper text-center">
+                                    <img src="https://1dapp.github.io/Home-Dashboard/Content/assets/img/d1.png" class="h-7" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-md-12 col-lg-6 col-xl-3">
+                <div class="card overflow-hidden bg-gradient-secondary">
+                    <div class="card-body text-white">
+
+                        <div class="d-flex">
+                            <div class="">
+                                <p class="mb-2 h6">AutoPool Earning ETH</p>
+                                <h2 class="mb-1 "><span class="totalpoolpayment">0</span></h2>
+                            </div>
+                            <div class=" my-auto ml-auto">
+                                <div class="chart-wrapper text-center">
+                                    <img src="https://1dapp.github.io/Home-Dashboard/Content/assets/img/d2.png" class="h-7" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+
+            <div class="col-md-12 col-lg-6 col-xl-3">
+                <div class="card overflow-hidden bg-teal">
+                    <div class="card-body text-white">
+                        <div class="d-flex">
+                            <div class="">
+                                <p class="mb-2 h6">Direct Team</p>
+                                <h2 class="mb-1 "><span class="referralcount">0</span></h2>
+                            </div>
+                            <div class=" my-auto ml-auto">
+                                <div class="chart-wrapper text-center">
+                                    <img src="https://1dapp.github.io/Home-Dashboard/Content/assets/img/d4.png" class="h-7" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-6 col-xl-3">
+                <div class="card overflow-hidden" style="background-color:#004172;color:#fff;">
+
+                    <div class="card-body text-white">
+                        <div class="d-flex">
+                            <div class="">
+                                <p class="mb-2 h6">Indirect Team</p>
+                                <h2 class="mb-1 "><span class="indirect_referralcount">0</span></h2>
+                            </div>
+
+                            <div class=" my-auto ml-auto">
+                                <div class="chart-wrapper text-center">
+                                    <img src="https://1dapp.github.io/Home-Dashboard/Content/assets/img/d5.png" class="h-7" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
         </div>
         <!-- row closed -->
         <!-- row opened -->
