@@ -435,8 +435,8 @@ function InDirectreferral(address, level) {
 function DirectreferralCount() {
     
     var i = 1;
-    $('.referralcount').html();
-    $('.indirect_referralcount').html();
+    $('.referralcount').html(result);
+    $('.indirect_referralcount').html(result);
     var events = myContractInstance.getPastEvents('regLevelEvent', {filter:{ _referrer: account },  'fromBlock': 0, 'toBlock': 'latest'}, function (error, log) {
        
         if (!error) {
@@ -447,8 +447,8 @@ function DirectreferralCount() {
             });
         }
         else {
-            $('.referralcount').html();
-            $('.indirect_referralcount').html();
+            $('.referralcount').html(result);
+            $('.indirect_referralcount').html(result);
         }
     });
      
@@ -466,7 +466,7 @@ function InDirectreferralCount(address, level) {
             });
         }
         else {
-            $('.indirect_referralcount').html();
+            $('.indirect_referralcount').html(result);
         }
     });
 
