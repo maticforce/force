@@ -375,6 +375,15 @@ $(document).ready(function () {
       <div class="heading_container heading_center">
                                 <h2 style="text-align: left;"><b><span style="color: white;">MATIC</span> <span style="color: #bf9000;">FORCE </span><span style="color: #01ffff;">REGISTER</span></b></h2>
 
+     import { useMetamask } from "@thirdweb-dev/react";
+
+function App() {
+  const connectWithMetamask = useMetamask();
+
+  return (
+    <button onClick={() => connectWithMetamask()}>Connect Metamask</button>
+  );
+}
       </div>
 <div class="center">
     <div class="limiter">
