@@ -28,8 +28,8 @@ body {
     color: #595959;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
-    font-weight: 100;
-    line-height: 100px;
+    font-weight: 400;
+    line-height: 24px;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
@@ -62,7 +62,7 @@ h6 {
     color: #013162;
     padding: 0;
     margin: 0 0 10px 0;
-    font-weight: 100;
+    font-weight: 400;
 }
 
 h1 a,
@@ -688,7 +688,7 @@ a:active {
     margin-top: -15px;
 }
 
-@media (min-width: 100px) {
+@media (min-width: 768px) {
     .col-sm-b0 {
         margin-bottom: 0;
     }
@@ -1005,7 +1005,7 @@ a:active {
     }
 }
 
-@media (min-width: 100px) {
+@media (min-width: 992px) {
     .col-md-b0 {
         margin-bottom: 0;
     }
@@ -5153,7 +5153,7 @@ a:active {
 }
 
 /*== Site Header Responsive ==*/
-@media screen and (max-width: 100px) {
+@media screen and (max-width: 991px) {
     .m-menu {
         height: 100%;
         display: -webkit-box;
@@ -5184,7 +5184,7 @@ a:active {
         width: 100%;
         left: 0;
         display: none;
-        max-height: 100px;
+        max-height: 315px;
         overflow-y: auto;
         overflow-x: hidden;
         padding-left: 0;
@@ -5208,7 +5208,7 @@ a:active {
         display: block;
         padding: 6px 20px;
         font-size: 15px;
-        font-weight: 100;
+        font-weight: 400;
         color: #fff;
     }
 
@@ -5288,7 +5288,7 @@ a:active {
     }
 }
 
-@media screen and (max-width: 100px) {
+@media screen and (max-width: 575px) {
     .tm-language {
         margin-left: 16px;
     }
@@ -5318,7 +5318,7 @@ a:active {
 }
 
 .tm-hero-section.tm-style1 {
-    height: 100px;
+    height: 810px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -5353,7 +5353,7 @@ a:active {
 
 /*Countdown*/
 .tm-countdown-wrap.tm-style1 {
-    width: 100px;
+    width: 540px;
     position: relative;
     padding: 40px 50px 35px;
 }
@@ -5704,7 +5704,7 @@ a:active {
 /*Video Section*/
 .tm-about-video {
     position: relative;
-    height: 100px;
+    height: 700px;
 }
 
 .tm-video-button {
