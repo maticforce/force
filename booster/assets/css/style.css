@@ -124,7 +124,7 @@ i {
 blockquote {
     background-color: #f3fbfd;
     font-size: 18px;
-    padding: 25px 70px;
+    padding: 0px 0px;
     font-style: italic;
     border-left: 3px solid #229cd6;
     margin: 20px 0;
@@ -189,14 +189,14 @@ a:active {
     border: 1px solid OrangeRed;
     color: #FF1493;
     display: inline-block;
-    padding: 10px 20px;
+    padding: 0px 0px;
     position: relative;
     opacity: 999;
     border-radius: 2px;
     text-transform: uppercase;
-    min-width: 1920px;
+    min-width: 100px;
     text-align: center;
-    line-height: 1080px;
+    line-height: 100px;
     cursor: pointer;
 }
 
