@@ -48,7 +48,7 @@ textarea {
 }
 
 textarea {
-    height: 0px;
+    height: 170px;
 }
 
 h1,
@@ -104,14 +104,14 @@ p {
 }
 
 ul {
-    margin: 0 0 0px 0;
-    padding-left: 0px;
+    margin: 0 0 15px 0;
+    padding-left: 15px;
     list-style: square outside none;
 }
 
 ol {
-    padding-left: 0px;
-    margin-bottom: 0px;
+    padding-left: 15px;
+    margin-bottom: 15px;
 }
 
 dfn,
@@ -124,10 +124,10 @@ i {
 blockquote {
     background-color: #f3fbfd;
     font-size: 18px;
-    padding: 0px 0px;
+    padding: 25px 70px;
     font-style: italic;
     border-left: 3px solid #229cd6;
-    margin: 0px 0;
+    margin: 20px 0;
 }
 
 address {
@@ -189,14 +189,14 @@ a:active {
     border: 1px solid OrangeRed;
     color: #FF1493;
     display: inline-block;
-    padding: 0px 0px;
+    padding: 10px 20px;
     position: relative;
     opacity: 999;
     border-radius: 2px;
     text-transform: uppercase;
-    min-width: 100px;
+    min-width: 1920px;
     text-align: center;
-    line-height: 500px;
+    line-height: 1080px;
     cursor: pointer;
 }
 
