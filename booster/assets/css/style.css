@@ -194,9 +194,9 @@ a:active {
     opacity: 999;
     border-radius: 2px;
     text-transform: uppercase;
-    min-width: 1920px;
+    min-width: 100px;
     text-align: center;
-    line-height: 1080px;
+    line-height: 100px;
     cursor: pointer;
 }
 
