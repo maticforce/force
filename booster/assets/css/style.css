@@ -185,18 +185,18 @@ a:active {
 
 /*Button tm-Style1*/
 .tm-btn {
-    background-color: darkgoldenrod;
-    border: 1px solid darkgoldenrod;
+    background-color: OrangeRed;
+    border: 1px solid OrangeRed;
     color: #fff;
     display: inline-block;
     padding: 10px 20px;
     position: relative;
     opacity: 999;
-    border-radius: 4px;
+    border-radius: 2px;
     text-transform: uppercase;
-    min-width: 170px;
+    min-width: 100px;
     text-align: center;
-    line-height: 23px;
+    line-height: 100px;
     cursor: pointer;
 }
 
@@ -227,7 +227,7 @@ a:active {
     -webkit-transition-delay: 0.05s;
     -o-transition-delay: 0.05s;
     transition-delay: 0.05s;
-    border-color: #7ab9ff;
+    border-color: #C71585;
 }
 
 .tm-btn:after {
@@ -236,7 +236,7 @@ a:active {
     border-width: 0 1px 0 1px;
     top: 0;
     left: -1px;
-    border-color: #7ab9ff;
+    border-color: #C71585;
 }
 
 .tm-btn:hover:before {
@@ -248,7 +248,7 @@ a:active {
 }
 
 .tm-btn:hover {
-    color: #7ab9ff;
+    color: #C71585;
     background-color: transparent;
 }
 
@@ -4204,7 +4204,7 @@ a:active {
 }
 
 .tm-light-blue-c {
-    color: #7ab9ff;
+    color: #C71585;
 }
 
 .tm-light-green-c {
@@ -4561,25 +4561,25 @@ a:active {
 }
 
 .tm-preloader-in .bar-top {
-    border-top: 25px solid #7ab9ff;
+    border-top: 25px solid #C71585;
     -webkit-animation: rotation-top 3.6s linear 0s infinite;
     animation: rotation-top 3.6s linear 0s infinite;
 }
 
 .tm-preloader-in .bar-right {
-    border-right: 25px solid #7ab9ff;
+    border-right: 25px solid #C71585;
     -webkit-animation: rotation-right 3.6s linear 0s infinite;
     animation: rotation-right 3.6s linear 0s infinite;
 }
 
 .tm-preloader-in .bar-bottom {
-    border-bottom: 25px solid #7ab9ff;
+    border-bottom: 25px solid #C71585;
     -webkit-animation: rotation-bottom 3.6s linear 0s infinite;
     animation: rotation-bottom 3.6s linear 0s infinite;
 }
 
 .tm-preloader-in .bar-left {
-    border-left: 25px solid #7ab9ff;
+    border-left: 25px solid #C71585;
     -webkit-animation: rotation-left 3.6s linear 0s infinite;
     animation: rotation-left 3.6s linear 0s infinite;
 }
@@ -4741,7 +4741,7 @@ a:active {
 }
 
 .tm-lenguage-dropdown a:hover {
-    color: #7ab9ff;
+    color: #C71585;
     background-color: rgba(0, 88, 174, 0.251);
 }
 
@@ -4912,7 +4912,7 @@ a:active {
 
 .tm-primary-nav .menu-item-has-children>ul>li a:hover,
 .tm-primary-nav .current-menu-parent .current-menu-item {
-    color: #7ab9ff;
+    color: #C71585;
     background-color: rgba(0, 88, 174, 0.251);
 }
 
@@ -5027,12 +5027,12 @@ a:active {
 }
 
 .tm-primary-nav .menu-item>.nav-link.active {
-    color: #7ab9ff;
+    color: #C71585;
 }
 
 .tm-primary-nav .menu-item>.nav-link:before {
     content: '';
-    background-color: #7ab9ff;
+    background-color: #C71585;
     position: absolute;
     top: 0;
     left: 50%;
@@ -5110,7 +5110,7 @@ a:active {
 }
 
 .tm-fix-bar ul li a.active {
-    border-color: #7ab9ff;
+    border-color: #C71585;
 }
 
 .tm-fix-bar ul li a:before {
@@ -5131,7 +5131,7 @@ a:active {
 }
 
 .tm-fix-bar ul li a.active:before {
-    background-color: #7ab9ff;
+    background-color: #C71585;
 }
 
 .tm-fix-bar ul li a:after {
@@ -5140,7 +5140,7 @@ a:active {
     width: 0px;
     position: absolute;
     left: 100%;
-    background-color: #7ab9ff;
+    background-color: #C71585;
     top: 3.5px;
     margin-left: 2px;
     -webkit-transition: all 0.3s ease;
@@ -5418,7 +5418,7 @@ a:active {
     -webkit-transition-delay: 0.05s;
     -o-transition-delay: 0.05s;
     transition-delay: 0.05s;
-    border-color: #7ab9ff;
+    border-color: #C71585;
     -webkit-animation-name: countdown_box2;
     animation-name: countdown_box2;
     -webkit-animation-duration: 7s;
@@ -5437,7 +5437,7 @@ a:active {
     border-width: 0 1px 0 1px;
     top: 0;
     left: 0px;
-    border-color: #7ab9ff;
+    border-color: #C71585;
     -webkit-animation-name: countdown_box1;
     animation-name: countdown_box1;
     -webkit-animation-duration: 7s;
@@ -5524,7 +5524,7 @@ a:active {
 .tm-token-status-bar-out {
     height: 40px;
     width: 100%;
-    border: 1px dashed #7ab9ff;
+    border: 1px dashed #C71585;
     border-radius: 20px;
     padding: 3px;
 }
@@ -5560,7 +5560,7 @@ a:active {
     content: '';
     height: 55px;
     width: 1px;
-    background-color: #7ab9ff;
+    background-color: #C71585;
     position: absolute;
     bottom: -61px;
 }
@@ -5735,8 +5735,8 @@ a:active {
     border-radius: 50%;
     -webkit-animation: tm-video-animaion 2s linear infinite;
     animation: tm-video-animaion 2s linear infinite;
-    -webkit-box-shadow: 0 0 0 11px #7ab9ff;
-    box-shadow: 0 0 0 8px #7ab9ff;
+    -webkit-box-shadow: 0 0 0 11px #C71585;
+    box-shadow: 0 0 0 8px #C71585;
 }
 
 .tm-about-video img {
@@ -5754,7 +5754,7 @@ a:active {
 
 .tm-video-button i {
     font-size: 72px;
-    color: #7ab9ff;
+    color: #C71585;
 }
 
 @-webkit-keyframes tm-video-animaion {
@@ -6784,7 +6784,7 @@ a:active {
     display: inline-block;
     text-align: center;
     background-color: #03468a;
-    color: #7ab9ff;
+    color: #C71585;
     text-transform: uppercase;
     padding: 10px 0;
     line-height: 25px;
@@ -7123,7 +7123,7 @@ a:active {
 }
 
 .tm-modal-footer a:hover {
-    color: #7ab9ff;
+    color: #C71585;
 }
 
 .tm-new-signup {
@@ -7144,7 +7144,7 @@ a:active {
 }
 
 .tm-new-signup:hover:before {
-    background-color: #7ab9ff;
+    background-color: #C71585;
 }
 
 .close {
@@ -7159,7 +7159,7 @@ a:active {
 }
 
 .close:hover {
-    color: #7ab9ff;
+    color: #C71585;
 }
 
 .close:focus {
