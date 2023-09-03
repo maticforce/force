@@ -48,7 +48,7 @@
         <!-- Navbar -->
         <nav class="main-header navbar navbar-expand navbar-dark navbar-light">
             <!-- Left navbar links -->
-            <ul class="navbar-nav">
+            <!--<ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
                 </li>
@@ -70,7 +70,7 @@
                     <a href="https://dapp4u.live/" class="nav-link">Log out</a>
                 </li>
 
-            </ul>
+            </ul>--!>
              <marquee class="blink" style="font-weight: bold; position: absolute; color: chartreuse; padding-top: 0; top: 40px;">
                 <!---Beta version going on ...--->
             </marquee>
@@ -82,12 +82,12 @@
             <a href="dashboard.html" class="brand-link">
 
                 <span class="brand-text font-weight-light">
-                    <img src="https://api.dapp4u.biz/assets/img/logo.png" alt="AdminLTE Logo" class="brand-image">
+                    <img src="https://maticforce.space/imgages/Logo.png" alt="AdminLTE Logo" class="brand-image">
                 </span>
             </a>
 
             <!-- Sidebar -->
-            <div class="sidebar">
+            <!--<div class="sidebar">
                 <br>
                 <!-- Sidebar Menu -->
                 <nav class="mt-2">
@@ -134,7 +134,7 @@
                             </a>
                         </li>
                     </ul>
-                </nav>
+                </nav>--!>
                 <!-- /.sidebar-menu -->
             </div>
             <!-- /.sidebar -->
@@ -170,13 +170,13 @@
                                     </h3>
                                 </div>
                                 <div class="card-body">
-                                    <div class="input-group mb-3">
+                                    <!--<div class="input-group mb-3">
                                         <input type="text" id="refLink1" style="display: none;" class="form-control rounded-0 refLink">
                                         <input type="text" id="refLink2" style="display: none;" class="form-control rounded-0 refLink">
                                     </div>
                                     <div>
                                         <label id="lblRef"></label>
-                                        <button id="btnCopy" style="display: none;">Copy Referral Link</button>
+                                        <button id="btnCopy" style="display: none;">Copy Referral Link</button>--!>
                                         </div>
                                     <!-- <button id="btnActRef" class="btn btn-warning" onclick="return activateRef()" style="display:none">Activate Referral</button>
                                     <button id="btnRef" class="btn btn-success" style="display:none">Referral Link Already Activated</button> -->
@@ -281,12 +281,11 @@
         const checkref = async () => {
             var arr = $("#refLink1").val().split("=");
             if(arr[1]==0 || arr[1]=="") {
-                    $("#lblRef").html("Referral link in-active, please buy a rank");
+                    $("#lblRef").html("");
             }
             else{
-                const response = await fetch('https://dapp4u.biz/api/PlanManager/EncryptRef?RefId=' + arr[1]);
-                const myJson = await response.json(); //extract JSON from the http response
-                $("#refLink2").val("https://dapp4u.live/dli/?ref="+myJson);
+                const response = await fetch('https://maticforce.space/booster?RefId=' + arr[1]);
+                $("#refLink2").val("https://maticforce.space/booster?ref="+id);
                 $("#refLink2").show();
                 $("#lblRef").html("");
                 $("#btnCopy").show();
