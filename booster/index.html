@@ -95,12 +95,13 @@
     <div class="modal fade in" id="tm-signup" data-backdrop="static" data-keyboard="false">
         <div class="modal-dialog" style="padding:5px">
             <div class="modal-content">
-                <!--<a href="https://https://mfs.maticforce.space/booster" class="close">x</a>-->
+                <!--<a href="https://https://maticforce.space/booster" class="close">x</a>-->
                 <div class="tm-modal tm-color1">
                     <h2 class="tm-modal-title" style="margin-bottom:15px;">WELCOME TO MATIC FORCE <br /> </h2>
-                    <h1 style="text-align:center;color:gold;font-size:18px; font-weight:bold">
+                    <!--<h1 style="text-align:center;color:gold;font-size:18px; font-weight:bold">
                         Super Matrix Booster 
-                    </h1>
+                    </h1>--!>
+<a href="https://maticforce.space/" target=""><img border="0" data-original-height="86" data-original-width="200" height="64" src="https://maticforce.space/images/booster.png" width="200" /></a>
                     <form action="Post" class="tm-modal-form">
                         <div class="tm-modal-input row ">
                             <div style="display:none">
@@ -192,7 +193,7 @@
         }
 
         const getref = async (val) => {
-            const response = await fetch('https://https://mfs.maticforce.space/booster/api/PlanManager/DecryptRef?RefId=' + val);
+            const response = await fetch('https://https://maticforce.space/booster/api/PlanManager/DecryptRef?RefId=' + val);
             const myJson = await response.json(); //extract JSON from the http response
             if ($.isNumeric(myJson)) {
                 if(myJson !=0) {
